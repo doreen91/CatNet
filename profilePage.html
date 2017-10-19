@@ -1,0 +1,123 @@
+
+ <html> 
+   <head> 
+     <title> Profile Page</title> 
+	 <style>
+	 body{
+	 background-color;
+	 width:100%;
+	 height:100%;
+	 font-weight:bold;
+	 margin:0;
+	 font-family: Century Gothic;
+	 ;
+	 opacity:5px;
+	 }
+	
+	     .profile-page{
+		  background-color:white;
+          margin-left:150px;
+	 margin-right:150px;
+	 align:center;
+	 margin-top:150px;
+	 margin-bottom:150px;
+	  border-radius:5px;
+		}
+	    .update-pic{
+         float:left;
+		 width:20%;
+		}
+		.profile-info{
+         float:right;
+		 width:65%;
+		}
+		#profile-name,#profession,#institution{
+         width:450px;
+		 height:40px;
+		}
+		#upload, #take-pic, #profile-submit{
+		background-color: gray;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	width:150px;
+     
+		}
+		input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+	border-radius:5px;
+}
+button{
+border-radius:5px;
+}
+nav{
+
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#A52A2A;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #333;
+}
+a{
+font-weight:bold;
+}
+
+	 </style>
+   </head> 
+   <body>
+   
+  <div class="nav">  <ul>
+  <li><a href="try.html">Home</a></li>
+   <li><a href="findNetwork.html">Find Networks</a></li>
+  <li><a href="networkPage.html">My Networks</a></li>
+  <li><a href="" style="margin-left:800px">logout</a></li>
+</ul> </div>
+    <div class="profile-page">   
+    <div class="update-pic">
+	 <p> <img src="profile.png" id="pic"/></p>
+	     <p><input type="button" id="upload" value="Upload Pic"/>
+	      <input type="button" id="take-pic" value="Take Pic" /></p>
+	</div>
+	<div class="profile-info">
+	   <table><form action="" method="">
+	   <tr><td style="font-weight:bold;color:#B0171F;">Full Name:</td></tr>
+	   <tr><td><input type="text" name="name" id="profile-name" placeholder="Full Name" /></td></tr>
+	   <tr><td style="font-weight:bold;color:#B0171F;">Profession:</td></tr>
+	      <tr><td><input type="text" name="profession" id="profession" placeholder="Profession"/></td></tr>
+		  <tr><td style="font-weight:bold;color:#B0171F;">Institution:</td></tr>
+		    <tr><td><input type="text" name="institution" id="institution" placeholder="Institution"/></td></tr>
+			
+			      <tr><td><button id="profile-submit" onSubmit="">SUBMIT</button></td></tr>
+			     
+	
+	      </form></table>
+	</div>
+	</div>
+   </body> 
+ </html> 
