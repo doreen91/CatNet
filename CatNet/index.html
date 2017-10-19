@@ -1,0 +1,238 @@
+<!Doctype>
+<html>
+<head>
+<title>CatNet</title> 
+<link type="text/css" rel="stylesheet" href="css/main2.css" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="js/tether.min.js"></script>
+
+
+<script type="text/javascript">
+	
+/*Dispalying modal when login button is clicked*/
+$(document).ready(function(){
+    $("#btnLogin").click(function (e) {
+    	e.preventDefault();
+    	console.log("Working");
+    	$("#myLoginModal").modal("show");
+
+    	
+        
+   });
+});
+
+/*Dispalying modal when Sign up button is clicked*/
+$(document).ready(function(){
+    $("#btnSignUp").click(function (e) {
+    	e.preventDefault();
+    	console.log("Working");
+    	$("#mySignUpModal").modal("show");
+   
+   });
+});
+
+/*Getting values for Authentication*/
+$(document).ready(function(){
+    $("#btnLoginSubmit").click(function (e) {
+    	e.preventDefault();
+    	console.log("Working");
+    	var txtEmail = $('#txtEmail').val();
+    	var txtPassword = $('#txtPassword').val();
+
+    	console.log(txtEmail);
+    	console.log(txtPassword);
+
+    	$("#myLoginModal").modal("hide");
+
+    	var txtEmail = $('#txtEmail').val("");
+    	var txtPassword = $('#txtPassword').val("");
+
+    	
+        
+   });
+});
+
+/*Getting values for signing up*/
+$(document).ready(function(){
+    $("#btnSignUpSubmit").click(function (e) {
+    	e.preventDefault();
+    	console.log("Working");
+    	var txtFirstName = $('#txtFirstName').val();
+    	var txtLastName = $('#txtLastName').val();
+    	var txtSignUpEmail = $('#txtSignUpEmail').val();
+    	var txtSignUpPassword = $('#txtSignUpPassword').val();
+
+    	console.log(txtFirstName);
+    	console.log(txtLastName);
+    	console.log(txtSignUpEmail);
+    	console.log(txtSignUpPassword);
+
+    	$("#mySignUpModal").modal("hide");
+
+    	var txtFirstName = $('#txtFirstName').val("");
+    	var txtLastName = $('#txtLastName').val("");
+    	var txtSignUpEmail = $('#txtSignUpEmail').val("");
+    	var txtSignUpPassword = $('#txtSignUpPassword').val("");
+
+        
+   });
+});
+
+
+
+</script>
+</head>
+<body>
+    
+ 
+<div id="lists">
+<nav id="nav">
+<ul >
+<li><a id="btnLogin" href="">Login</a></li>
+<li><a id="btnSignUp" href="">SignUp</a></li>
+</ul>
+</nav>
+<img id="logo" src="images/lii.png"/>
+
+<center>
+<div id="message">
+    <p class="me">Welcome to <span  id="me" >CatNet </span> </p><br>
+    <p class="para">CatNet is a social media platform for networking among caterers and individuals.</p>
+</div>
+</center>
+
+
+
+<!-- Modal for Login-->
+<div class="modal fade" id="myLoginModal" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 style="font-family: Century Gothic" class="modal-title" id="myModalLabel">
+                    LOGIN
+                </h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form style="font-family: Century Gothic" role="form">
+                  <div class="form-group">
+                    <label for="Email">Email</label>
+                      <input type="email" class="form-control"
+                      id="txtEmail" placeholder="Enter Email" />
+                  </div>
+
+
+
+                  <div class="form-group">
+                    <label for="Password">Password</label>
+                      <input type="password" class="form-control"
+                          id="txtPassword" placeholder="Enter Password"/>
+                  </div>
+                  
+                </form>
+                
+                
+            </div>
+            
+            <!-- Modal Footer -->
+            <div style="font-family: Century Gothic" class="modal-footer">
+
+            	<button id="btnLoginSubmit" type="button" class="btn btn-primary">
+                    Login
+                </button>
+
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Cancel
+                </button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Sign Up-->
+<div class="modal fade" id="mySignUpModal" tabindex="-1" role="dialog" 
+     aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <button type="button" class="close" 
+                   data-dismiss="modal">
+                       <span aria-hidden="true">&times;</span>
+                       <span class="sr-only">Close</span>
+                </button>
+                <h4 style="font-family: Century Gothic" class="modal-title" id="myModalLabel">
+                    SIGN UP
+                </h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                <form style="font-family: Century Gothic" role="form">
+                  <div class="form-group">
+                    <label for="FirstName">First Name</label>
+                      <input type="text" class="form-control"
+                      id="txtFirstName" placeholder="Enter firstName" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="LastName">Last Name</label>
+                      <input type="text" class="form-control"
+                      id="txtLastName" placeholder="Enter LastName" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="Email">Email</label>
+                      <input type="email" class="form-control"
+                          id="txtSignUpEmail" placeholder="Enter email"/>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="Password">Password</label>
+                      <input type="password" class="form-control"
+                          id="txtSignUpPassword" placeholder="Enter Password"/>
+                  </div>
+                  
+                </form>
+                
+                
+            </div>
+            
+            <!-- Modal Footer -->
+            <div style="font-family: Century Gothic" class="modal-footer">
+
+            	<button id="btnSignUpSubmit" type="button" class="btn btn-primary">
+                    Create Account
+                </button>
+
+                <button type="button" class="btn btn-default"
+                        data-dismiss="modal">
+                            Cancel
+                </button>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</div>
+    
+</body>
+</html>
