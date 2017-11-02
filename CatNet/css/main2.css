@@ -63,6 +63,7 @@ li a{
 li a:hover{
     text-decoration: none;
     background-color: #B0171F;
+    border-radius: 25px;
 }
 #li{
     
@@ -174,6 +175,7 @@ li a{
 li a:hover{
    text-decoration: none; 
     background-color: #B0171F;
+    border-radius: 25px;
 }
 #li{
     text-decoration: none; 

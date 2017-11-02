@@ -4,10 +4,11 @@
 <title>CatNet</title> 
 <link type="text/css" rel="stylesheet" href="css/main2.css" />
 <link rel="stylesheet" href="css/bootstrap.min.css">
-<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
 
 
 <script type="text/javascript">
@@ -50,6 +51,8 @@ $(document).ready(function(){
     	var txtEmail = $('#txtEmail').val("");
     	var txtPassword = $('#txtPassword').val("");
 
+      window.location.href = "main_page.html";
+
     	
         
    });
@@ -76,6 +79,8 @@ $(document).ready(function(){
     	var txtLastName = $('#txtLastName').val("");
     	var txtSignUpEmail = $('#txtSignUpEmail').val("");
     	var txtSignUpPassword = $('#txtSignUpPassword').val("");
+
+      window.location.href = "main_page.html";
 
         
    });
@@ -119,7 +124,7 @@ $(document).ready(function(){
                        <span class="sr-only">Close</span>
                 </button>
                 <h4 style="font-family: Century Gothic" class="modal-title" id="myModalLabel">
-                    LOGIN
+                    
                 </h4>
             </div>
             
@@ -129,7 +134,7 @@ $(document).ready(function(){
                 <form style="font-family: Century Gothic" role="form">
                   <div class="form-group">
                     <label for="Email">Email</label>
-                      <input type="email" class="form-control"
+                      <input style="border-radius: 25px; type="email" class="form-control"
                       id="txtEmail" placeholder="Enter Email" />
                   </div>
 
@@ -137,8 +142,8 @@ $(document).ready(function(){
 
                   <div class="form-group">
                     <label for="Password">Password</label>
-                      <input type="password" class="form-control"
-                          id="txtPassword" placeholder="Enter Password"/>
+                      <input  type="password" class="form-control" 
+                          id="txtPassword" style="border-radius: 25px;" placeholder="Enter Password"  />
                   </div>
                   
                 </form>
@@ -149,11 +154,11 @@ $(document).ready(function(){
             <!-- Modal Footer -->
             <div style="font-family: Century Gothic" class="modal-footer">
 
-            	<button id="btnLoginSubmit" type="button" class="btn btn-primary">
+            	<button style="border-radius: 25px; background-color: #B0171F;" id="btnLoginSubmit" type="button" class="btn btn-primary">
                     Login
                 </button>
 
-                <button type="button" class="btn btn-default"
+                <button style="border-radius: 25px;" type="button" class="btn btn-default"
                         data-dismiss="modal">
                             Cancel
                 </button>
@@ -176,7 +181,7 @@ $(document).ready(function(){
                        <span class="sr-only">Close</span>
                 </button>
                 <h4 style="font-family: Century Gothic" class="modal-title" id="myModalLabel">
-                    SIGN UP
+                    
                 </h4>
             </div>
             
@@ -186,26 +191,26 @@ $(document).ready(function(){
                 <form style="font-family: Century Gothic" role="form">
                   <div class="form-group">
                     <label for="FirstName">First Name</label>
-                      <input type="text" class="form-control"
+                      <input style="border-radius: 25px;" type="text" class="form-control"
                       id="txtFirstName" placeholder="Enter firstName" />
                   </div>
 
                   <div class="form-group">
                     <label for="LastName">Last Name</label>
-                      <input type="text" class="form-control"
+                      <input style="border-radius: 25px; type="text" class="form-control"
                       id="txtLastName" placeholder="Enter LastName" />
                   </div>
 
                   <div class="form-group">
                     <label for="Email">Email</label>
-                      <input type="email" class="form-control"
+                      <input style="border-radius: 25px; type="email" class="form-control"
                           id="txtSignUpEmail" placeholder="Enter email"/>
                   </div>
 
                   <div class="form-group">
                     <label for="Password">Password</label>
-                      <input type="password" class="form-control"
-                          id="txtSignUpPassword" placeholder="Enter Password"/>
+                      <input type="password"   class="form-control"
+                          id="txtSignUpPassword" style="border-radius: 25px;" placeholder="Enter Password"/>
                   </div>
                   
                 </form>
@@ -216,11 +221,11 @@ $(document).ready(function(){
             <!-- Modal Footer -->
             <div style="font-family: Century Gothic" class="modal-footer">
 
-            	<button id="btnSignUpSubmit" type="button" class="btn btn-primary">
+            	<button style="border-radius: 25px; background-color: #B0171F;" id="btnSignUpSubmit" type="button" class="btn btn-primary">
                     Create Account
                 </button>
 
-                <button type="button" class="btn btn-default"
+                <button style="border-radius: 25px;" type="button" class="btn btn-default"
                         data-dismiss="modal">
                             Cancel
                 </button>
@@ -233,6 +238,8 @@ $(document).ready(function(){
 
 
 </div>
+
+
     
 </body>
 </html>
